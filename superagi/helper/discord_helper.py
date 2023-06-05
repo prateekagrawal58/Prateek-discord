@@ -1,7 +1,6 @@
-import tools.discord
+import discord
 from discord.ext import commands
 from typing import List
-
 
 class DiscordHelper:
     def __init__(self):
@@ -15,7 +14,7 @@ class DiscordHelper:
             message_content = [msg.content for msg in messages]
             self.bot.close()
             return message_content
-        self.bot.run("DISCORD_BOT_TOKEN")
+        self.bot.run("MTExNTI1MzY1MzE0NjcxMDA2Ng.G0Z2xS.BhzoXQ6aHrIxi-3Yz6hWhzJ3YlHxs9IOSAsj9Y")
 
     def send_message(self, channel_id: str, message: str):
         @self.bot.event
@@ -24,4 +23,4 @@ class DiscordHelper:
             await channel.send(message)
             self.bot.close()
         
-        self.bot.run("DISCORD_BOT_TOKEN")
+        self.bot.run("MTExNTI1MzY1MzE0NjcxMDA2Ng.G0Z2xS.BhzoXQ6aHrIxi-3Yz6hWhzJ3YlHxs9IOSAsj9Y")
